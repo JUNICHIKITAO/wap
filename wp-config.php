@@ -1,6 +1,6 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * WordPress の基本設定
  *
  * このファイルは、MySQL、テーブル接頭辞、秘密鍵、言語、ABSPATH の設定を含みます。
  * より詳しい情報は {@link http://wpdocs.sourceforge.jp/wp-config.php_%E3%81%AE%E7%B7%A8%E9%9B%86 
@@ -19,20 +19,20 @@
 // (http://wpdocs.sourceforge.jp/Codex:%E8%AB%87%E8%A9%B1%E5%AE%A4 参照)
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
-// ** MySQL 設定 - こちらの情報はホスティング先から入手してください。 ** //
+// ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'ryushion_wptest');
+define('DB_NAME', 'webic_win8appli');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'ryushion_wap');
+define('DB_USER', 'webic');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', 'ryushion0210');
+define('DB_PASSWORD', 'sfn9vuyr9w');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql5.minibird.netowl.jp');
+define('DB_HOST', 'mysql408.db.sakura.ne.jp');
 
-/** データベースのテーブルを作成する際のデータベースのキャラクターセット */
+/** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
 
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
@@ -47,14 +47,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'uG{1_dJ<N(h^gLJ@YOGO%vr`]H*xc]^8L~ABpp|6fC^ivnw]s|.pzIn1]c9^y^bb');
-define('SECURE_AUTH_KEY',  '/z0Z4+da`q<ebet4=t9Axp,q%hBOm&|zuEAw9K8L~%Z{IL+Wt 3hy`z^zvy5[<kE');
-define('LOGGED_IN_KEY',    '(]WH5~!}7]qR!]_JR<)L{PqG<h<?* j}Wn6X-vs9)v_zj8&-/O-:D0U&a4xE>ZbD');
-define('NONCE_KEY',        '6nvnlDg9nQ /razNY#l<?I8-)qE6T{ZS5t.PzO1S?b@;P0QusDWC[&{kN+M?zzLe');
-define('AUTH_SALT',        '0Hr|`c68zEC[mP}{ty{b3+&Y9xuygPr@WLCp<Ylsv<}.qyM*P_|}r7;DTobUZ*81');
-define('SECURE_AUTH_SALT', 'h{ ?O)Vh{5I(.K7fx&H?Z]9Cz$c%nM;COzZe>H#F@?jHJ0(0K(1}m-cl*q?P8!4s');
-define('LOGGED_IN_SALT',   'm!5eczC1D+;R]wZ f^3Xnh}BzKgW/Dr9-#y}AodCmK4 V=mmo=TXH>R+*vh!y-f9');
-define('NONCE_SALT',       'n1$B[qY0:(;D-Y(Ibkx@2D)W6dWD]+K:|.q(MW6lHpOy223E<Ixztfy6h3z54SX[');
+define('AUTH_KEY',         '^]6Eeh6h|K]:6W$G@AT:W/-!@0)7nyEQ^ U0$|;kAU0DLmCODs[%NhMjn@}SOf[Q');
+define('SECURE_AUTH_KEY',  'eDR`+f~<fbx~Mwm6@u,vLSuEJ6b?J^KF7~S45vxx4.fg,hSe#-&TzZG+vG^6qE_d');
+define('LOGGED_IN_KEY',    'tgClC-,|UU>v ehaw4*A9-hg6oO9yRr]cp?lvy4rDC/M!YwHhsZ.|z3 (cp-_Zgb');
+define('NONCE_KEY',        'WY|Q{+!nKlQ|Xgv/5?OlJ_L=N82~zUw-a{$t<?@3_*tGXm:my_c0/s0qo%[[WIcz');
+define('AUTH_SALT',        '->rRO,sF*%fd{n5X+EZ-3+@0(@<I0ZXoH%vxwQyjWyci|WgF?W~Sj5~TP_9A=H)5');
+define('SECURE_AUTH_SALT', 'ZtAR}ett<j| ho~_EZPU6WEov3oo,>@483Y(SSSh7H<HR?Rnw]l{v?4~@sZ6gQ3e');
+define('LOGGED_IN_SALT',   ',r6fg4E|[[%/EV`q`5$M+5,;@-gm~FVM*ZQGAlwsjyhA!v[e,!@S|v;2)APII*9m');
+define('NONCE_SALT',       '0g+dFPBi+AN!G)kWn{+)]G-+.V<5MeM@|`[Z3}$R`w4)GG~`C:,cj,wuzAuGW@be');
 
 /**#@-*/
 
@@ -70,8 +70,8 @@ $table_prefix  = 'wp_';
  * ローカル言語 - このパッケージでは初期値として 'ja' (日本語 UTF-8) が設定されています。
  *
  * WordPress のローカル言語を設定します。設定した言語に対応する MO ファイルが
- * wp-content/languages にインストールされている必要があります。例えば de_DE.mo を
- * wp-content/languages にインストールし WPLANG を 'de_DE' に設定することでドイツ語がサポートされます。
+ * wp-content/languages にインストールされている必要があります。たとえば de_DE.mo を
+ * wp-content/languages にインストールし WPLANG を 'de_DE' に設定すると、ドイツ語がサポートされます。
  */
 define('WPLANG', 'ja');
 
@@ -81,7 +81,7 @@ define('WPLANG', 'ja');
  * この値を true にすると、開発中に注意 (notice) を表示します。
  * テーマおよびプラグインの開発者には、その開発環境においてこの WP_DEBUG を使用することを強く推奨します。
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
